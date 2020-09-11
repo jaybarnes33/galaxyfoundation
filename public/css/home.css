@@ -76,7 +76,7 @@ body {
 
 .campaign-image {
   width: 100%;
-  height: 230px;
+  height: 260px;
 }
 
 .cause {
@@ -147,6 +147,42 @@ body {
   margin: 10px;
 }
 
+/* Blog */
+.post {
+  border: 1px solid #808080;
+  border-radius: 10px;
+  display: inline-flex;
+  margin: 10px 0;
+}
+
+.post .text {
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+}
+
+.post .image {
+  width: 50%;
+  text-align: right;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.date {
+  font-weight: bold;
+}
+.date > i {
+  color: #28df99;
+}
+
+.by,
+.comment {
+  color: #28df99;
+}
 /* partners */
 .logos {
   text-align: center;
@@ -223,6 +259,24 @@ textarea:focus {
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .featured-thumb {
+    width: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(90, 92, 106, 0.8) 0%,
+        rgba(32, 45, 58, 0.8) 81.3%
+      ),
+      url("../images/background.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
 }
 
