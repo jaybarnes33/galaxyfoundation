@@ -1,0 +1,209 @@
+section {
+  padding: 40px 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(90, 92, 106, 0.8) 0%,
+      rgba(32, 45, 58, 0.8) 81.3%
+    ),
+    url("/images/resources/poorkids.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.heading {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.minor-heading,
+.item-heading {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Main */
+.text-block {
+  padding: 140px 0;
+  text-align: center;
+}
+
+.text-main {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.text-main > span {
+  color: #28df99;
+}
+
+.text-other {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.btn {
+  padding: 10px 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-donate {
+  text-transform: uppercase;
+  background-color: #28df99;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+/* featured */
+.featured-cases .nav-link {
+  color: #28df99;
+}
+
+.campaign-image {
+  width: 100%;
+  height: 230px;
+}
+
+.cause {
+  background-color: white;
+}
+
+.cause .text {
+  padding: 20px;
+}
+
+.cause button {
+  margin: 20px 0;
+  border: 1px solid #28df99;
+  color: #28df99;
+  background-color: white;
+}
+
+.cause button:hover {
+  margin: 20px 0;
+  background-color: #28df99;
+  color: white;
+}
+.featured-thumb {
+  width: 80px;
+}
+/* What we do */
+.featured-cases {
+  background-color: #f4f4f4;
+}
+.item-img {
+  text-align: center;
+}
+.item-heading {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.item-text {
+  text-align: center;
+}
+
+/* 
+.mas {
+  background-color: indianred;
+} */
+
+/* cta */
+.thanks {
+  text-align: center;
+  padding: 50px;
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(90, 92, 106, 0.5) 0%,
+      rgba(32, 45, 58, 0.5) 81.3%
+    ),
+    url("/images/resources/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thanks .text {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.buttons button {
+  margin: 10px;
+}
+
+/* partners */
+.logos {
+  text-align: center;
+}
+
+.aga {
+  margin-top: -25px;
+}
+/* Contact */
+.contact input,
+textarea {
+  border: none;
+  width: 90%;
+  background: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.input-wrapper {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px;
+}
+.input-wrapper:focus {
+  outline-width: 2rem;
+  outline: greenyellow;
+}
+/* icons */
+.fab {
+  padding: 10px;
+  border: 1px solid #28df99;
+  border-radius: 50%;
+  color: #28df99;
+  margin: 0 10px;
+}
+
+.contact form .fa,
+.contact form .fas {
+  color: grey;
+}
+
+.address {
+  padding: 10px;
+  border-bottom: 1px solid #28df99;
+}
+
+.contact a {
+  color: black;
+}
+.contact a:hover {
+  color: #28df99;
+  text-decoration: none;
+}
+
+.details {
+  padding: 20px;
+}

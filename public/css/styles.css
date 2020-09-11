@@ -1,0 +1,22 @@
+.logo {
+  width: 70px;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+footer {
+  padding: 10px;
+  color: grey;
+}

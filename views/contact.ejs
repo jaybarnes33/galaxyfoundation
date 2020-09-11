@@ -1,0 +1,51 @@
+<%- include ("partials/header.ejs") -%>
+<body>
+    <main>
+        <%- include ("partials/nav.ejs") -%>
+        <div class="container">
+            <div class="row contact ">
+              <div class="mx-auto col-lg-6 ">
+                  <form action="/contact" class="contact-form" method="POST">
+                    <div class="input-wrapper">
+                      <input type="text" name="name" placeholder="Name" />
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div class="input-wrapper">
+                      <input type="email" name="name" placeholder="E-mail" />
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="input-wrapper">
+                      <textarea
+                        name="message"
+                        class="message"
+                        rows="5"
+                        placeholder="Message Here"
+                      ></textarea>
+                      <i class="fas fa-pencil-alt"></i>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-lg-6 details ">
+                  <p class="address"><i class="fab fas fa-map-marker-alt"></i> Obuasi.</p>
+                  <p class="address">
+                    <a href="tel: +233 54 143 5288" class="phone"
+                      ><i class="fab fas fa-phone"></i>+233 54 143 5288</a
+                    >
+                  </p>
+                  <p class="address">
+                    <a href="mailto:galaxyfoundation444@yahoo.com">
+                      <i class="fab fa fa-envelope"></i>
+                    </a>
+                    galaxyfoundation444@yahoo.com
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+      
+      </main> 
+      <%- include ("partials/footer.ejs") -%>
+      <%- include ("partials/scripts.ejs") -%>
+</body>
+</html>
+<%- include ("partials/header.ejs") -%>

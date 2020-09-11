@@ -1,0 +1,75 @@
+body {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(90, 92, 106, 0.5) 0%,
+      rgba(32, 45, 58, 0.5) 81.3%
+    ),
+    url("/images/resources/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact {
+  padding: 130px 20px;
+}
+input,
+textarea {
+  border: none;
+  width: 90%;
+  background: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.input-wrapper {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px;
+}
+.input-wrapper:focus {
+  outline-width: 2rem;
+  outline: greenyellow;
+}
+/* icons */
+.fab {
+  padding: 10px;
+  border: 1px solid #28df99;
+  border-radius: 50%;
+  color: #28df99;
+  margin: 0 10px;
+}
+
+.contact form .fa,
+.contact form .fas {
+  color: grey;
+}
+
+.address {
+  padding: 10px;
+  border-bottom: 1px solid #28df99;
+}
+
+.contact a {
+  color: black;
+}
+.contact a:hover {
+  color: #28df99;
+  text-decoration: none;
+}
+
+.form {
+  background-color: #28df99;
+}
+
+.input-wrapper,
+textarea {
+  background-color: white;
+}
+
+footer {
+  color: whitesmoke;
+}
