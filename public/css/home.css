@@ -225,3 +225,18 @@ textarea:focus {
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: 300px) and (max-width: 700px) and (orientation: portrait) {
+  main {
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(90, 92, 106, 0.8) 0%,
+        rgba(32, 45, 58, 0.8) 81.3%
+      ),
+      url("../images/background.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}
