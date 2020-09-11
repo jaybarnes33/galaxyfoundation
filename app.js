@@ -16,6 +16,6 @@ app.get("/", (req, res) => {
 app.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Us", sheet: "css/contact.css" });
 });
-app.listen(port || process.env.PORT, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server started on port ${port}`);
 });
