@@ -12,9 +12,9 @@ body {
       rgba(90, 92, 106, 0.8) 0%,
       rgba(32, 45, 58, 0.8) 81.3%
     ),
-    url("/images/resources/poorkids.jpg");
-  background-position: center;
-  background-size: cover;
+    url("../images/boy.png");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .heading {
@@ -151,6 +151,9 @@ body {
   text-align: center;
 }
 
+/* .partner-logo {
+  width: 250px;
+} */
 .aga {
   margin-top: -25px;
 }
