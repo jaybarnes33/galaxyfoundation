@@ -30,6 +30,7 @@ body {
 .minor-heading,
 .item-heading {
   font-family: "Montserrat", sans-serif;
+  color: #28df99;
 }
 
 /* Main */
@@ -129,8 +130,8 @@ body {
   padding: 50px;
   background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 0.5) 0%,
-      rgba(32, 45, 58, 0.5) 81.3%
+      rgba(90, 92, 106, 0.9) 0%,
+      rgba(32, 45, 58, 0.9) 81.3%
     ),
     url("/images/resources/bg.jpeg");
   background-position: center;
@@ -147,6 +148,43 @@ body {
   margin: 10px;
 }
 
+/* Reviews */
+.testimony {
+  text-align: center;
+  padding: 50px;
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(90, 92, 106, 0.95) 0%,
+      rgba(32, 45, 58, 0.9) 81.3%
+    ),
+    url("/images/resources/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.quote {
+  color: #28df99;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.review {
+  padding-bottom: 35px;
+}
+
+.testimony .carousel-indicators > li {
+  border-radius: 120%;
+  width: 20px;
+  padding: 10px;
+  background-color: #28df99;
+}
 /* Blog */
 .post {
   border: 1px solid #808080;
@@ -183,9 +221,27 @@ body {
 .comment {
   color: #28df99;
 }
+
+.by-line {
+  color: #808080;
+}
 /* partners */
 .logos {
   text-align: center;
+}
+
+.partners {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(90, 92, 106, 0.9) 0%,
+      rgba(32, 45, 58, 0.9) 81.3%
+    ),
+    url("/images/resources/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 1.3rem;
 }
 
 /* .partner-logo {
@@ -218,12 +274,16 @@ textarea:focus {
   outline: greenyellow;
 }
 /* icons */
-.fab {
+.round-icon {
   padding: 10px;
   border: 1px solid #28df99;
   border-radius: 50%;
   color: #28df99;
   margin: 0 10px;
+}
+
+.fa-map-marker-alt {
+  padding: 10px 12px;
 }
 
 .contact form .fa,
@@ -233,7 +293,6 @@ textarea:focus {
 
 .address {
   padding: 10px;
-  border-bottom: 1px solid #28df99;
 }
 
 .contact a {
@@ -248,6 +307,10 @@ textarea:focus {
   padding: 20px;
 }
 
+/* Map */
+.map iframe {
+  width: 100%;
+}
 @media (min-width: 300px) and (max-width: 700px) {
   .main {
     background-image: radial-gradient(

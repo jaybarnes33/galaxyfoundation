@@ -20,3 +20,7 @@ footer {
   padding: 10px;
   color: grey;
 }
+footer .icons {
+  text-align: right;
+  font-size: 1.2rem;
+}
