@@ -181,7 +181,7 @@ body {
 
 .testimony .carousel-indicators > li {
   border-radius: 120%;
-  width: 20px;
+  width: 10px;
   padding: 10px;
   background-color: #28df99;
 }
@@ -279,7 +279,7 @@ textarea:focus {
   border: 1px solid #28df99;
   border-radius: 50%;
   color: #28df99;
-  margin: 0 10px;
+  margin: 0 4px;
 }
 
 .fa-map-marker-alt {
@@ -329,6 +329,15 @@ textarea:focus {
 
   .desktop-only {
     display: none;
+  }
+  .address {
+    font-size: 1.1rem;
+  }
+  .testimony .carousel-indicators > li {
+    border-radius: 120%;
+    width: 5px;
+    padding: 5px;
+    background-color: #28df99;
   }
 }
 
