@@ -233,10 +233,10 @@ body {
 .partners {
   background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 0.9) 0%,
+      rgba(90, 92, 106, 0.95) 0%,
       rgba(32, 45, 58, 0.9) 81.3%
     ),
-    url("/images/resources/bg.jpeg");
+    url("/images/resources/banner.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
