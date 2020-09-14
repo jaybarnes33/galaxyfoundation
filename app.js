@@ -2,10 +2,10 @@ const express = require("express");
 const ejs = require("ejs");
 
 const app = express();
-const connectDB = require("./config/db");
+// const connectDB = require("./config/db");
 const port = 3000;
 
-connectDB();
+// connectDB();
 app.use(express.static(__dirname + "/public/"));
 
 app.set("view engine", "ejs");
@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.render("home", { title: "Home", sheet: "css/home.css" });
 });
 
-app.use("/admin/", require("./routes/admin"));
+// app.use("/admin/", require("./routes/admin"));
 app.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Us", sheet: "css/contact.css" });
 });
