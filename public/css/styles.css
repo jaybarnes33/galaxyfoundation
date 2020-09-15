@@ -18,7 +18,8 @@ nav {
 
 footer {
   padding: 10px;
-  color: grey;
+  color: black;
+  background-color: white;
 }
 footer .icons {
   text-align: right;
