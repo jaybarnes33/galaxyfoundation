@@ -30,7 +30,7 @@ body {
 .minor-heading,
 .item-heading {
   font-family: "Montserrat", sans-serif;
-  color: #5c2a9d;
+  color: #035aa6;
 }
 
 /* Main */
@@ -47,7 +47,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .text-main > span {
-  color: #5c2a9d;
+  color: #035aa6;
 }
 
 .text-other {
@@ -62,12 +62,12 @@ body {
 
 main .btn-donate {
   text-transform: uppercase;
-  background-color: #5c2a9d;
+  background-color: #035aa6;
   color: white;
 }
 
 .buttons .btn-donate {
-  background-color: #5c2a9d;
+  background-color: #035aa6;
   text-transform: uppercase;
   color: white;
 }
@@ -78,7 +78,7 @@ main .btn-donate {
 
 /* featured */
 .featured-cases .nav-link {
-  color: #5c2a9d;
+  color: #035aa6;
 }
 
 .campaign-image {
@@ -96,14 +96,14 @@ main .btn-donate {
 
 .cause button {
   margin: 20px 0;
-  border: 1px solid #5c2a9d;
-  color: #5c2a9d;
+  border: 1px solid #035aa6;
+  color: #035aa6;
   background-color: white;
 }
 
 .cause button:hover {
   margin: 20px 0;
-  background-color: #5c2a9d;
+  background-color: #035aa6;
   color: white;
 }
 .featured-thumb {
@@ -165,7 +165,7 @@ main .btn-donate {
 }
 
 .quote {
-  color: #5c2a9d;
+  color: #035aa6;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -182,7 +182,7 @@ main .btn-donate {
   border-radius: 120%;
   width: 10px;
   padding: 10px;
-  background-color: #5c2a9d;
+  background-color: #035aa6;
 }
 /* Blog */
 .post {
@@ -213,12 +213,12 @@ main .btn-donate {
   font-weight: bold;
 }
 .date > i {
-  color: #5c2a9d;
+  color: #035aa6;
 }
 
 .by,
 .comment {
-  color: #5c2a9d;
+  color: #035aa6;
 }
 
 .by-line {
@@ -275,9 +275,9 @@ textarea:focus {
 /* icons */
 .round-icon {
   padding: 10px;
-  border: 1px solid #5c2a9d;
+  border: 1px solid #035aa6;
   border-radius: 50%;
-  color: #5c2a9d;
+  color: #035aa6;
   margin: 0 4px;
 }
 
@@ -298,7 +298,7 @@ textarea:focus {
   color: black;
 }
 .contact a:hover {
-  color: #5c2a9d;
+  color: #035aa6;
   text-decoration: none;
 }
 
@@ -336,7 +336,7 @@ textarea:focus {
     border-radius: 120%;
     width: 5px;
     padding: 5px;
-    background-color: #5c2a9d;
+    background-color: #035aa6;
   }
 }
 

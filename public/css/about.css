@@ -57,7 +57,7 @@ main div > p {
 
 .heading,
 .minor-heading {
-  color: #5c2a9d;
+  color: #035aa6;
 }
 
 .about {
@@ -88,5 +88,5 @@ main div > p {
 iframe {
   border-radius: 10px;
   height: 370px;
-  width: 600px;
+  width: 70%;
 }
