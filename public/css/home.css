@@ -30,7 +30,7 @@ body {
 .minor-heading,
 .item-heading {
   font-family: "Montserrat", sans-serif;
-  color: #7ea04d;
+  color: #f37121;
 }
 
 /* Main */
@@ -47,7 +47,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .text-main > span {
-  color: #7ea04d;
+  color: #f37121;
 }
 
 .text-other {
@@ -60,9 +60,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.btn-donate {
+main .btn-donate {
   text-transform: uppercase;
-  background-color: #7ea04d;
+  background-color: #f37121;
+  color: white;
+}
+
+.buttons .btn-donate {
+  background-color: #f37121;
+  text-transform: uppercase;
   color: white;
 }
 
@@ -72,7 +78,7 @@ body {
 
 /* featured */
 .featured-cases .nav-link {
-  color: #7ea04d;
+  color: #f37121;
 }
 
 .campaign-image {
@@ -90,14 +96,14 @@ body {
 
 .cause button {
   margin: 20px 0;
-  border: 1px solid #7ea04d;
-  color: #7ea04d;
+  border: 1px solid #f37121;
+  color: #f37121;
   background-color: white;
 }
 
 .cause button:hover {
   margin: 20px 0;
-  background-color: #7ea04d;
+  background-color: #f37121;
   color: white;
 }
 .featured-thumb {
@@ -152,12 +158,6 @@ body {
 .testimony {
   text-align: center;
   padding: 50px;
-  background-image: radial-gradient(
-      circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 0.95) 0%,
-      rgba(32, 45, 58, 0.9) 81.3%
-    ),
-    url("/images/resources/bg.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,7 +166,7 @@ body {
 }
 
 .quote {
-  color: #7ea04d;
+  color: #f37121;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -183,7 +183,7 @@ body {
   border-radius: 120%;
   width: 10px;
   padding: 10px;
-  background-color: #7ea04d;
+  background-color: #f37121;
 }
 /* Blog */
 .post {
@@ -214,12 +214,12 @@ body {
   font-weight: bold;
 }
 .date > i {
-  color: #7ea04d;
+  color: #f37121;
 }
 
 .by,
 .comment {
-  color: #7ea04d;
+  color: #f37121;
 }
 
 .by-line {
@@ -276,9 +276,9 @@ textarea:focus {
 /* icons */
 .round-icon {
   padding: 10px;
-  border: 1px solid #7ea04d;
+  border: 1px solid #f37121;
   border-radius: 50%;
-  color: #7ea04d;
+  color: #f37121;
   margin: 0 4px;
 }
 
@@ -299,7 +299,7 @@ textarea:focus {
   color: black;
 }
 .contact a:hover {
-  color: #7ea04d;
+  color: #f37121;
   text-decoration: none;
 }
 
@@ -337,7 +337,7 @@ textarea:focus {
     border-radius: 120%;
     width: 5px;
     padding: 5px;
-    background-color: #7ea04d;
+    background-color: #f37121;
   }
 }
 
