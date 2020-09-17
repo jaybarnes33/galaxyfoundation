@@ -28,14 +28,15 @@ main div > p {
 }
 
 .project .text {
-  padding: 0px 10px;
-  padding-top: 60px;
-  width: 40%;
-  text-align: left;
-}
+  padding: 20px 10px;
 
+  width: 50%;
+  text-align: left;
+  height: 250px;
+  overflow-y: scroll;
+}
 .project .image {
-  width: 60%;
+  width: 50%;
   text-align: center;
 }
 
@@ -50,7 +51,7 @@ main div > p {
   color: #035aa6;
 }
 .btn {
-  padding: 10px 10px;
+  padding: 10px 25px;
   font-family: "Poppins", sans-serif;
 }
 
