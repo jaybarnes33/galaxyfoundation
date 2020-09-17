@@ -269,7 +269,7 @@ textarea:focus {
 .input-wrapper {
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid grey;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
   margin: 10px;
 }
 .input-wrapper:focus {
@@ -308,6 +308,13 @@ textarea:focus {
 
 .details {
   padding: 20px;
+}
+
+.btn-contact {
+  text-transform: uppercase;
+  background-color: #035aa6;
+  color: white;
+  margin: 10px;
 }
 
 /* Map */
