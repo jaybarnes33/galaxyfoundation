@@ -272,10 +272,7 @@ textarea:focus {
   box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
   margin: 10px;
 }
-.input-wrapper:focus {
-  outline-width: 2rem;
-  outline: greenyellow;
-}
+
 /* icons */
 .round-icon {
   padding: 10px;
