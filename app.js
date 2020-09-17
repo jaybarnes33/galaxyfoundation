@@ -23,6 +23,10 @@ app.get("/about", (req, res) => {
   res.render("about", { title: "About Us", sheet: "css/about.css" });
 });
 
+app.get("/projects", (req, res) => {
+  res.render("projects", { title: "Projects", sheet: "css/projects.css" });
+});
+
 app.listen(process.env.PORT || port, () => {
   console.log(`Server started on port ${port}`);
 });
