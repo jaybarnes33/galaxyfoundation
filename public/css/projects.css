@@ -32,8 +32,6 @@ main div > p {
 
   width: 50%;
   text-align: left;
-  height: 250px;
-  overflow-y: scroll;
 }
 .project .image {
   width: 50%;
