@@ -36,7 +36,7 @@ textarea:focus {
   outline: greenyellow;
 }
 /* icons */
-.fab {
+.main .fab {
   padding: 10px;
   border: 1px solid #035aa6;
   border-radius: 50%;
@@ -84,4 +84,14 @@ textarea {
   background-color: #035aa6;
   color: white;
   margin: 10px;
+}
+
+.footer {
+  height: 20px;
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    padding: 220px 20px;
+  }
 }
