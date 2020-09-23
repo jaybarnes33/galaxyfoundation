@@ -58,7 +58,7 @@ exports.register = async (req, res) => {
 
     const payload = {
       user: {
-        name: admin.firstname,
+        name: admin._id,
       },
     };
     jwt.sign(
@@ -70,5 +70,8 @@ exports.register = async (req, res) => {
         res.status(200).json({ token });
       }
     );
-  } catch (error) {}
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).json("Server error");
+  }
 };

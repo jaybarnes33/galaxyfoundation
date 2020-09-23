@@ -30,7 +30,7 @@ body {
 .minor-heading,
 .item-heading {
   font-family: "Montserrat", sans-serif;
-  color: #035aa6;
+  color: #393b44;
 }
 
 /* Main */
@@ -47,7 +47,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .text-main > span {
-  color: #035aa6;
+  color: #393b44;
 }
 
 .text-other {
@@ -62,12 +62,12 @@ body {
 
 .btn-donate {
   text-transform: uppercase;
-  background-color: #035aa6;
+  background-color:#ffa931;
   color: white;
 }
 
 .buttons .btn-donate {
-  background-color: #035aa6;
+  background-color:#ffa931;
   text-transform: uppercase;
   color: white;
 }
@@ -98,14 +98,14 @@ body {
 .cause button {
   margin: 20px 0;
   padding: 10px 20px;
-  border: 1px solid #035aa6;
-  color: #035aa6;
+  border: 1px solid#ffa931;
+  color:#ffa931;
   background: none;
 }
 
 .cause button:hover {
   margin: 20px 0;
-  background-color: #035aa6;
+  background-color:#ffa931;
   color: white;
 }
 .featured-thumb {
@@ -140,13 +140,13 @@ body {
   padding: 50px;
   background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 0.9) 0%,
-      rgba(32, 45, 58, 0.9) 81.3%
-    ),
-    url("/images/resources/bg.jpeg");
+      rgba(90, 92, 106, 1) 0%,
+      rgba(32, 45, 58, 1) 81.3%
+    );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  /* background-color: #393b44; */
 }
 
 .cta-testimony .text {
@@ -169,7 +169,7 @@ body {
 }
 
 .quote {
-  color: #035aa6;
+  color: #;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -186,7 +186,9 @@ body {
   border-radius: 120%;
   width: 10px;
   padding: 10px;
-  background-color: #035aa6;
+  background: none;
+  border: 1px solid#ffa931;
+  background-color:#ffa931;
 }
 /* Blog */
 .post {
@@ -217,12 +219,12 @@ body {
   font-weight: bold;
 }
 .date > i {
-  color: #035aa6;
+  color: #393b44;
 }
 
 .by,
 .comment {
-  color: #035aa6;
+  color: #393b44;
 }
 
 .by-line {
@@ -238,8 +240,7 @@ body {
       circle farthest-corner at 10% 20%,
       rgba(90, 92, 106, 0.95) 0%,
       rgba(32, 45, 58, 0.9) 81.3%
-    ),
-    url("/images/resources/banner.jpg");
+    );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -276,9 +277,9 @@ textarea:focus {
 /* icons */
 .round-icon {
   padding: 10px;
-  border: 1px solid #035aa6;
+  border: 1px solid #393b44;
   border-radius: 50%;
-  color: #035aa6;
+  color: #393b44;
   margin: 0 4px;
 }
 
@@ -299,7 +300,7 @@ textarea:focus {
   color: black;
 }
 .contact a:hover {
-  color: #035aa6;
+  color: #393b44;
   text-decoration: none;
 }
 
@@ -309,7 +310,7 @@ textarea:focus {
 
 .btn-contact {
   text-transform: uppercase;
-  background-color: #035aa6;
+  background-color:#ffa931;
   color: white;
   margin: 10px;
 }
@@ -344,7 +345,7 @@ textarea:focus {
     border-radius: 120%;
     width: 5px;
     padding: 5px;
-    background-color: #035aa6;
+    background-color: #393b44;
   }
 }
 
