@@ -62,12 +62,12 @@ body {
 
 .btn-donate {
   text-transform: uppercase;
-  background-color:#ffa931;
+  background-color: #ffa931;
   color: white;
 }
 
 .buttons .btn-donate {
-  background-color:#ffa931;
+  background-color: #ffa931;
   text-transform: uppercase;
   color: white;
 }
@@ -99,13 +99,13 @@ body {
   margin: 20px 0;
   padding: 10px 20px;
   border: 1px solid#ffa931;
-  color:#ffa931;
+  color: #ffa931;
   background: none;
 }
 
 .cause button:hover {
   margin: 20px 0;
-  background-color:#ffa931;
+  background-color: #ffa931;
   color: white;
 }
 .featured-thumb {
@@ -127,6 +127,7 @@ body {
 }
 .item-text {
   text-align: center;
+  margin: 15px 0;
 }
 
 /*
@@ -139,10 +140,10 @@ body {
   text-align: center;
   padding: 50px;
   background-image: radial-gradient(
-      circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 1) 0%,
-      rgba(32, 45, 58, 1) 81.3%
-    );
+    circle farthest-corner at 10% 20%,
+    rgba(90, 92, 106, 1) 0%,
+    rgba(32, 45, 58, 1) 81.3%
+  );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -188,7 +189,7 @@ body {
   padding: 10px;
   background: none;
   border: 1px solid#ffa931;
-  background-color:#ffa931;
+  background-color: #ffa931;
 }
 /* Blog */
 .post {
@@ -237,10 +238,10 @@ body {
 
 .partners {
   background-image: radial-gradient(
-      circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 0.95) 0%,
-      rgba(32, 45, 58, 0.9) 81.3%
-    );
+    circle farthest-corner at 10% 20%,
+    rgba(90, 92, 106, 0.95) 0%,
+    rgba(32, 45, 58, 0.9) 81.3%
+  );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -310,7 +311,7 @@ textarea:focus {
 
 .btn-contact {
   text-transform: uppercase;
-  background-color:#ffa931;
+  background-color: #ffa931;
   color: white;
   margin: 10px;
 }
