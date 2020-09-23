@@ -13,7 +13,7 @@ body {
       rgba(32, 45, 58, 0.4) 81.3%
     ),
     url("../images/background.jpg");
-  background-position: right;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -93,7 +93,7 @@ body {
 }
 
 .cause .text {
-  padding: 35px 40px;
+  padding: 40px 40px;
 }
 
 .cause button {
@@ -113,9 +113,6 @@ body {
   width: 80px;
 }
 
-.featured-cases {
-  /* background-color: #f4f4f4; */
-}
 /* What we do */
 
 .item-img {
@@ -197,9 +194,12 @@ body {
   box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   display: inline-flex;
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
+.post:hover {
+  transform: translateY(30px);
+}
 .post .text {
   padding: 20px;
   width: 50%;

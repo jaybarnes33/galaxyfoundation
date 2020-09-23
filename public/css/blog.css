@@ -1,0 +1,65 @@
+main {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(90, 92, 106, 0.5) 0%,
+      rgba(32, 45, 58, 0.5) 81.3%
+    ),
+    url("../images/resources/eventmain.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main div > p {
+  padding: 100px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Blog */
+.post {
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: inline-flex;
+  margin: 40px 0;
+}
+
+.post:hover {
+  transform: translateY(30px);
+}
+
+.post .text {
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+}
+
+.post .image {
+  width: 50%;
+  text-align: center;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.date {
+  font-weight: bold;
+}
+.date > i {
+  color: #393b44;
+}
+
+.by,
+.comment {
+  color: #393b44;
+}
+
+.by-line {
+  color: #808080;
+}

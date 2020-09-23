@@ -3,8 +3,8 @@
 }
 
 nav {
+  position: absolute;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
 }
 .nav-link {
   color: white;
@@ -17,7 +17,8 @@ nav {
 }
 
 .navbar-toggler {
-  background-color: white;
+  background-color: #ffa931;
+  color: white;
 }
 
 footer {
@@ -31,18 +32,4 @@ footer .icons {
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px) and (orientation: portrait) {
-  .navbar-collapse {
-    position: absolute;
-    padding: 40% 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    height: 100vh;
-    text-align: center;
-    background-color: #ffa931;
-  }
-  .navbar-toggler {
-    z-index: 1;
-  }
 }
