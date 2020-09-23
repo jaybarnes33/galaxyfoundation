@@ -70,6 +70,7 @@ body {
   background-color: #ffa931;
   text-transform: uppercase;
   color: white;
+  width: 200px;
 }
 
 .btn:hover {
@@ -92,7 +93,7 @@ body {
 }
 
 .cause .text {
-  padding: 20px;
+  padding: 35px 40px;
 }
 
 .cause button {
@@ -170,7 +171,7 @@ body {
 }
 
 .quote {
-  color: #;
+  color: #ffa931;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -346,7 +347,9 @@ textarea:focus {
     border-radius: 120%;
     width: 5px;
     padding: 5px;
-    background-color: #393b44;
+    background: none;
+    border: 1px solid#ffa931;
+    background-color: #ffa931;
   }
 }
 
