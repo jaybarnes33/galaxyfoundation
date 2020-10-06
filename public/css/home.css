@@ -9,8 +9,8 @@ body {
 .main {
   background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 0.4) 0%,
-      rgba(32, 45, 58, 0.4) 81.3%
+      rgba(90, 92, 106, 0.6) 0%,
+      rgba(32, 45, 58, 0.6) 81.3%
     ),
     url("../images/background.jpg");
   background-position: center;
@@ -25,12 +25,13 @@ body {
   font-size: 1.4rem;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 .minor-heading,
 .item-heading {
   font-family: "Montserrat", sans-serif;
-  color: #393b44;
+  color: #f54291;
 }
 
 /* Main */
@@ -47,7 +48,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .text-main > span {
-  color: #393b44;
+  color: #f54291;
 }
 
 .text-other {
@@ -62,20 +63,10 @@ body {
 
 .btn-donate {
   text-transform: uppercase;
-  background-color: #ffa931;
+  background-color: #f54291;
   color: white;
 }
 
-.buttons .btn-donate {
-  background-color: #ffa931;
-  text-transform: uppercase;
-  color: white;
-  width: 200px;
-}
-
-.btn:hover {
-  color: white;
-}
 
 /* featured */
 
@@ -99,14 +90,14 @@ body {
 .cause button {
   margin: 20px 0;
   padding: 10px 20px;
-  border: 1px solid#ffa931;
-  color: #ffa931;
+  border: 1px solid#f54291;
+  color: #f54291;
   background: none;
 }
 
 .cause button:hover {
   margin: 20px 0;
-  background-color: #ffa931;
+  background-color: #f54291;
   color: white;
 }
 .featured-thumb {
@@ -137,19 +128,18 @@ body {
 .cta-testimony {
   text-align: center;
   padding: 50px;
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(90, 92, 106, 1) 0%,
-    rgba(32, 45, 58, 1) 81.3%
-  );
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: #393b44; */
+
 }
 
+
+
+
+
 .cta-testimony .text {
-  color: white;
   font-size: 1.3rem;
 }
 
@@ -163,12 +153,11 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
   font-size: 1.3rem;
 }
 
 .quote {
-  color: #ffa931;
+  color: #fff;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -183,11 +172,11 @@ body {
 
 .testimony .carousel-indicators > li {
   border-radius: 120%;
-  width: 10px;
+  width: 2px;
   padding: 10px;
   background: none;
-  border: 1px solid#ffa931;
-  background-color: #ffa931;
+  border: 1px solid #fff;
+  background-color: #fff;
 }
 /* Blog */
 .post {
@@ -221,12 +210,12 @@ body {
   font-weight: bold;
 }
 .date > i {
-  color: #393b44;
+  color: #f54291;
 }
 
 .by,
 .comment {
-  color: #393b44;
+  color: #f54291;
 }
 
 .by-line {
@@ -237,18 +226,7 @@ body {
   text-align: center;
 }
 
-.partners {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(90, 92, 106, 0.95) 0%,
-    rgba(32, 45, 58, 0.9) 81.3%
-  );
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  font-size: 1.3rem;
-}
+
 
 /* .partner-logo {
   width: 250px;
@@ -279,9 +257,9 @@ textarea:focus {
 /* icons */
 .round-icon {
   padding: 10px;
-  border: 1px solid #393b44;
+  border: 1px solid #f54291;
   border-radius: 50%;
-  color: #393b44;
+  color: #f54291;
   margin: 0 4px;
 }
 
@@ -302,7 +280,7 @@ textarea:focus {
   color: black;
 }
 .contact a:hover {
-  color: #393b44;
+  color: #f54291;
   text-decoration: none;
 }
 
@@ -312,7 +290,7 @@ textarea:focus {
 
 .btn-contact {
   text-transform: uppercase;
-  background-color: #ffa931;
+  background-color: #f54291;
   color: white;
   margin: 10px;
 }
@@ -348,8 +326,8 @@ textarea:focus {
     width: 5px;
     padding: 5px;
     background: none;
-    border: 1px solid#ffa931;
-    background-color: #ffa931;
+    border: 1px solid#f54291;
+    background-color: #f54291;
   }
 }
 
@@ -357,14 +335,13 @@ textarea:focus {
   .main {
     background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
-        rgba(90, 92, 106, 0.4) 0%,
-        rgba(32, 45, 58, 0.4) 81.3%
+        rgba(90, 92, 106, 0.6) 0%,
+        rgba(32, 45, 58, 0.6) 81.3%
       ),
       url("../images/background.jpg");
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100vh;
   }
 }
 
@@ -379,6 +356,6 @@ textarea:focus {
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
   }
 }

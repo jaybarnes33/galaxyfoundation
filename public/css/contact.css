@@ -38,9 +38,9 @@ textarea:focus {
 /* icons */
 .main .fab {
   padding: 10px;
-  border: 1px solid #393b44;
+  border: 1px solid #f54291;
   border-radius: 50%;
-  color: #393b44;
+  color: #f54291;
   margin: 0 10px;
 }
 
@@ -57,12 +57,12 @@ textarea:focus {
   color: white;
 }
 .contact a:hover {
-  color: #393b44;
+  color: #f54291;
   text-decoration: none;
 }
 
 .form {
-  background-color: #393b44;
+  background-color: #f54291;
 }
 
 .input-wrapper,
@@ -81,7 +81,7 @@ textarea {
 
 .btn-contact {
   text-transform: uppercase;
-  background-color: #393b44;
+  background-color: #f54291;
   color: white;
   margin: 10px;
 }

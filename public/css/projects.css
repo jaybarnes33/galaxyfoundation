@@ -46,7 +46,7 @@ main div > p {
 
 .project .title {
   font-family: "Montserrat", sans-serif;
-  color: #035aa6;
+  color: #f54291;
 }
 .btn {
   padding: 10px 25px;
@@ -55,13 +55,13 @@ main div > p {
 
 .project button {
   margin: 20px 0;
-  border: 1px solid #035aa6;
-  color: #035aa6;
+  border: 1px solid #150485;
+  color: #150485;
   background-color: white;
 }
 
 .project button:hover {
   margin: 20px 0;
-  background-color: #035aa6;
+  background-color: #150485;
   color: white;
 }
