@@ -16,7 +16,7 @@ main div > p {
   color: white;
   font-weight: bold;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .project {
@@ -55,13 +55,13 @@ main div > p {
 
 .project button {
   margin: 20px 0;
-  border: 1px solid #150485;
-  color: #150485;
+  border: 1px solid #f54291;
+  color: #f54291;
   background-color: white;
 }
 
 .project button:hover {
   margin: 20px 0;
-  background-color: #150485;
+  background-color: #f54291;
   color: white;
 }

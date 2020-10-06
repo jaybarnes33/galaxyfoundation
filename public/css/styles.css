@@ -8,7 +8,6 @@ nav {
   background-color: white;
   box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
   width: 100%;
-
 }
 .nav-link {
   color: black;
@@ -17,7 +16,7 @@ nav {
 }
 
 nav .nav-link:hover {
-  color: #f54291 ;
+  color: #f54291;
   /* border: 1px solid #f54291; */
   border-right: 1px 0 1px 0;
   border-radius: 10px;

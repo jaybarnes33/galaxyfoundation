@@ -1,0 +1,109 @@
+main {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(90, 92, 106, 0.5) 0%,
+      rgba(32, 45, 58, 0.5) 81.3%
+    ),
+    url("../images/resources/eventmain.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main div > p {
+  padding: 100px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.gallery .image {
+  margin: 20px;
+  position: relative;
+}
+.gallery .image a,
+.gallery .image img {
+  display: block;
+}
+.gallery .image img {
+  width: 100%;
+}
+.gallery .image img {
+  position: relative;
+  z-index: 4;
+  max-width: 100%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.gallery .image .image-info {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  display: block;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  overflow: hidden;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.gallery .image:hover .image-info {
+  opacity: 1;
+  -moz-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -o-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+.gallery .image .image-info p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+
+  transform: scale3d(2, 2, 1) translate3d(0, 70%, 0);
+  -moz-transform: scale3d(2, 2, 1) translate3d(0, 70%, 0);
+  -o-transform: scale3d(2, 2, 1) translate3d(0, 70%, 0);
+  -webkit-transform: scale3d(2, 2, 1) translate3d(0, 70%, 0);
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.gallery .image:hover .image-info p {
+  -moz-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -o-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+.gallery .image .imageMirror {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.gallery .image .imageMirror img {
+  transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+}

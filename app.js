@@ -31,6 +31,10 @@ app.get("/blog", (req, res) => {
   res.render("blog", { title: "Blog", sheet: "css/blog.css" });
 });
 
+app.get("/gallery", (req, res) => {
+  res.render("gallery", { title: "Gallery", sheet: "css/gallery.css" });
+});
+
 app.listen(process.env.PORT || port, () => {
   console.log(`Server started on port ${port}`);
 });
