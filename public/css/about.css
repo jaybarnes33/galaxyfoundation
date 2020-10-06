@@ -33,6 +33,13 @@ main div > p {
 .mission {
   padding: 30px 10px;
 }
+.mission-item {
+  text-align: center;
+  width: fit-content;
+  max-width: 95%;
+  padding: 0 2.5%;
+}
+
 .heading {
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
@@ -55,9 +62,8 @@ main div > p {
   text-align: center;
 }
 
-.heading,
 .minor-heading {
-  color: #f54291;
+  text-align: center;
 }
 
 .about {
@@ -84,9 +90,9 @@ main div > p {
 
 .name {
   font-weight: bold;
+  color: #f54291;
 }
 iframe {
-  border-radius: 10px;
   height: 370px;
-  width: 90%;
+  width: 100%;
 }
