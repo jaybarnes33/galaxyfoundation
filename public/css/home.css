@@ -350,4 +350,8 @@ textarea:focus {
     background-repeat: no-repeat;
     height: 100vh;
   }
+  .text-block {
+    padding: 70px 0;
+    text-align: center;
+  }
 }
