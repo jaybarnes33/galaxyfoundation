@@ -16,6 +16,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  overflow-y: hidden;
 }
 
 .heading {
@@ -347,6 +348,6 @@ textarea:focus {
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
   }
 }
