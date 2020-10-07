@@ -151,7 +151,7 @@ body {
 }
 
 .quote {
-  color: #fff;
+  color: #f54291;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -321,6 +321,12 @@ textarea:focus {
     border: 1px solid#f54291;
     background-color: #f54291;
   }
+  .quote {
+    color: #f54291;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+  }
 }
 
 @media (min-width: 700px) {
@@ -348,10 +354,9 @@ textarea:focus {
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
   }
   .text-block {
-    padding: 70px 0;
+    padding: 150px 0 130 0;
     text-align: center;
   }
 }
