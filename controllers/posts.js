@@ -7,14 +7,10 @@ const Admin = require("../models/Admin");
 // Private
 
 exports.newPost = async (req, res) => {
-  let { title, author, content, date } = req.body;
+  let { title, content, date } = req.body;
   try {
-    console.log(req.user);
-    const author = await Admin.findById(req.user.id);
-
     const post = new Post({
       title,
-      author: author.firstname + " " + author.lastname,
       content,
       date,
     });
