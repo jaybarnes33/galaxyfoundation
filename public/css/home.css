@@ -12,7 +12,7 @@ body {
       rgba(90, 92, 106, 0.2) 0%,
       rgba(32, 45, 58, 0.2) 81.3%
     ),
-    url("../images/background.jpg");
+    url("../images/bg2-min.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
