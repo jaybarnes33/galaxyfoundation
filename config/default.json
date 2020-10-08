@@ -1,4 +1,5 @@
 {
   "jwtSecret": "asfgk;lasglasfgasfgl;",
-  "dbUri": "mongodb://localhost:27017/galaxyDB"
+  "dbUri": "mongodb://localhost:27017/galaxyDB",
+  "atlasURI": "mongodb+srv://admin-jay:jay@last@cluster0-d5tnn.mongodb.net/galaxy"
 }

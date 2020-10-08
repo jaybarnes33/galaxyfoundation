@@ -4,39 +4,6 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const Admin = require("../models/Admin");
 
-// @Desc login
-// @Access Public
-exports.login = async (req, res) => {
-  try {
-    const { username, password } = req.body;
-
-    const admin = await Admin.find({ username });
-    if (!admin) {
-      return res.status(401).json({ msg: "Invalid Credentials" });
-    }
-    const isMatch = await bcrypt.compare(password, admin.password);
-    if (!isMatch) {
-      return res.status(401).json({ msg: "Invalid Credentials" });
-    }
-    const payload = {
-      user: {
-        name: admin.firstname,
-      },
-    };
-    jwt.sign(
-      payload,
-      config.get("jwtSecret"),
-      { expiresIn: "30d" },
-      (error, token) => {
-        if (err) throw err;
-        res.status(200).json({ token });
-      }
-    );
-  } catch (error) {
-    console.error(error.message);
-  }
-};
-
 // @Desc register
 // @Access Public
 exports.register = async (req, res) => {
@@ -45,7 +12,7 @@ exports.register = async (req, res) => {
   try {
     let admin = await Admin.findOne({ username: username });
     if (admin) {
-      return res.status(403).json({ msg: "User Already Exists" });
+      return res.status(401).json({ msg: "User Already Exists" });
     }
     admin = new Admin({
       firstname,
@@ -58,20 +25,56 @@ exports.register = async (req, res) => {
 
     const payload = {
       user: {
-        name: admin._id,
+        id: admin._id,
       },
     };
+
     jwt.sign(
       payload,
       config.get("jwtSecret"),
-      { expiresIn: "30d" },
-      (error, token) => {
+      { expiresIn: "36d" },
+      (err, token) => {
         if (err) throw err;
-        res.status(200).json({ token });
+        res.json({ token });
       }
     );
   } catch (error) {
     console.error(error.message);
     res.status(500).json("Server error");
+  }
+};
+
+// @Desc login
+// @Access Public
+exports.login = async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    let admin = await Admin.findOne({ username: username });
+    if (!admin) {
+      return res.status(403).json({ errors: [{ msg: "Invalid Credentials" }] });
+    }
+
+    const isMatch = await bcrypt.compare(password, admin.password);
+    // JWT
+    if (!isMatch) {
+      return res.status(403).json({ errors: [{ msg: "Invalid Credentials" }] });
+    }
+    const payload = {
+      user: {
+        id: admin._id,
+      },
+    };
+
+    jwt.sign(
+      payload,
+      config.get("jwtSecret"),
+      { expiresIn: "36d" },
+      (err, token) => {
+        if (err) throw err;
+        res.json({ token });
+      }
+    );
+  } catch (error) {
+    console.error(error.message);
   }
 };

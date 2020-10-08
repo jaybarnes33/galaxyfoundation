@@ -9,6 +9,7 @@
   "author": "John Barnes Oduro Twumasi",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
     "ejs": "^3.1.5",

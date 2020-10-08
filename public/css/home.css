@@ -9,8 +9,8 @@ body {
 .main {
   background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
-      rgba(90, 92, 106, 0.4) 0%,
-      rgba(32, 45, 58, 0.4) 81.3%
+      rgba(90, 92, 106, 0.2) 0%,
+      rgba(32, 45, 58, 0.2) 81.3%
     ),
     url("../images/background.jpg");
   background-position: center;
@@ -295,8 +295,8 @@ textarea:focus {
   .main {
     background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
-        rgba(90, 92, 106, 0.4) 0%,
-        rgba(32, 45, 58, 0.4) 81.3%
+        rgba(90, 92, 106, 0.2) 0%,
+        rgba(32, 45, 58, 0.2) 81.3%
       ),
       url("../images/background.jpg");
     background-position: right;
@@ -333,8 +333,8 @@ textarea:focus {
   .main {
     background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
-        rgba(90, 92, 106, 0.4) 0%,
-        rgba(32, 45, 58, 0.4) 81.3%
+        rgba(90, 92, 106, 0.2) 0%,
+        rgba(32, 45, 58, 0.2) 81.3%
       ),
       url("../images/background.jpg");
     background-position: right;
@@ -347,8 +347,8 @@ textarea:focus {
   main {
     background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
-        rgba(90, 92, 106, 0.4) 0%,
-        rgba(32, 45, 58, 0.4) 81.3%
+        rgba(90, 92, 106, 0.2) 0%,
+        rgba(32, 45, 58, 0.2) 81.3%
       ),
       url("../images/background.jpg");
     background-position: right;
