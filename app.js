@@ -3,6 +3,7 @@ const ejs = require("ejs");
 
 const app = express();
 const connectDB = require("./config/db");
+const Post = require("./models/Post");
 const port = 3000;
 
 connectDB();
@@ -12,12 +13,22 @@ app.set("view engine", "ejs");
 
 // BodyParser
 app.use(express.json());
-app.get("/", (req, res) => {
-  res.render("home", { title: "Home", sheet: "css/home.css" });
+app.use("/api/admins", require("./routes/admin"));
+app.use("/api/posts", require("./routes/posts"));
+
+app.get("/", async (req, res) => {
+  try {
+    const posts = await Post.find();
+    res.render("home", {
+      title: "Home",
+      sheet: "css/home.css",
+      posts: posts,
+    });
+  } catch (error) {
+    console.error(error.message);
+  }
 });
 
-app.use("/admins", require("./routes/admin"));
-app.use("/posts", require("./routes/posts"));
 app.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Us", sheet: "css/contact.css" });
 });
@@ -32,9 +43,17 @@ app.get("/about", (req, res) => {
 app.get("/projects", (req, res) => {
   res.render("projects", { title: "Projects", sheet: "css/projects.css" });
 });
-
-app.get("/blog", (req, res) => {
-  res.render("blog", { title: "Blog", sheet: "css/blog.css" });
+app.get("/blog", async (req, res) => {
+  try {
+    const posts = await Post.find();
+    res.render("blog", {
+      title: "Blog",
+      sheet: "css/blog.css",
+      posts: posts,
+    });
+  } catch (error) {
+    console.error(error.message);
+  }
 });
 
 app.get("/gallery", (req, res) => {

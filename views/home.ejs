@@ -249,15 +249,20 @@
     <div class="container">
       <p class="heading">Blog Posts</p>
       <div class="row">
-        <div class="col-lg-6 col-sm-6">
+        <% posts.map ((post) => {%>
+        <div class="col-lg-6">
           <div class="post">
             <div class="text">
               <span class="date"
-                ><i class="far fa-calendar-alt"></i> Oct 24,2015</span
+                ><i class="far fa-calendar-alt"></i> <%=post.date%></span
               >
-              <p class="post-title">Lorem ipsum dolor sit amet.</p>
+              <p class="post-title"><%=post.title%></p>
+              <p class="content">
+                <%= post.content.substring(0,100)+"..." %>
+                <a href="/posts/<%=post._id%>">Read more</a>
+              </p>
               <p class="by-line">
-                By: <span class="by">Admin</span> / Comment:
+                By: <span class="by"><%=post.author%></span> / Comment:
                 <span class="comment">12</span>
               </p>
             </div>
@@ -266,57 +271,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-6">
-          <div class="post">
-            <div class="text">
-              <span class="date"
-                ><i class="far fa-calendar-alt"></i> Oct 24,2015</span
-              >
-              <p class="post-title">Lorem ipsum dolor sit amet.</p>
-              <p class="by-line">
-                By: <span class="by">Admin</span> / Comment:
-                <span class="comment">12</span>
-              </p>
-            </div>
-            <div class="image">
-              <img src="/images/logo-min.png" alt="" class="post-image" />
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-6 desktop-only">
-          <div class="post">
-            <div class="text">
-              <span class="date"
-                ><i class="far fa-calendar-alt"></i> Oct 24,2015</span
-              >
-              <p class="post-title">Lorem ipsum dolor sit amet.</p>
-              <p class="by-line">
-                By: <span class="by">Admin</span> / Comment:
-                <span class="comment">12</span>
-              </p>
-            </div>
-            <div class="image">
-              <img src="/images/logo-min.png" alt="" class="post-image" />
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-6 desktop-only">
-          <div class="post">
-            <div class="text">
-              <span class="date"
-                ><i class="far fa-calendar-alt"></i> Oct 24,2015</span
-              >
-              <p class="post-title">Lorem ipsum dolor sit amet.</p>
-              <p class="by-line">
-                By: <span class="by">Admin</span> / Comment:
-                <span class="comment">12</span>
-              </p>
-            </div>
-            <div class="image">
-              <img src="/images/logo-min.png" alt="" class="post-image" />
-            </div>
-          </div>
-        </div>
+
+        <%})%>
       </div>
     </div>
   </section>
