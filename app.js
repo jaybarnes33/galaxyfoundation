@@ -18,7 +18,10 @@ app.use("/api/posts", require("./routes/posts"));
 
 app.get("/", async (req, res) => {
   try {
-    let response = await axios.get("http://localhost:3000/api/posts/");
+    let response = await axios.get(
+      // "http://localhost:3000/api/posts/"
+      "http://galaxyfo.herokuapp.com/api/posts/"
+    );
 
     const posts = response.data.data;
 
@@ -48,7 +51,10 @@ app.get("/projects", (req, res) => {
 });
 app.get("/blog", async (req, res) => {
   try {
-    let response = await axios.get("http://localhost:3000/api/posts/");
+    let response = await axios.get(
+      // "http://localhost:3000/api/posts/"
+      "http://galaxyfo.herokuapp.com/api/posts/"
+    );
 
     const posts = response.data.data;
     res.render("blog", {
@@ -64,7 +70,8 @@ app.get("/blog/posts/:post_id", async (req, res) => {
   try {
     const post_id = req.params.post_id;
     let response = await axios.get(
-      `http://localhost:3000/api/posts/${post_id}`
+      // `http://localhost:3000/api/posts/${post_id}`
+      `http://galaxyfo.herokuapp.com/api/posts/${post_id}`
     );
 
     const post = response.data.data;
