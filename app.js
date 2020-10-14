@@ -1,6 +1,6 @@
 const express = require("express");
 const ejs = require("ejs");
-
+const axios = require("axios");
 const app = express();
 const connectDB = require("./config/db");
 const Post = require("./models/Post");
@@ -18,7 +18,10 @@ app.use("/api/posts", require("./routes/posts"));
 
 app.get("/", async (req, res) => {
   try {
-    const posts = await Post.find();
+    let response = await axios.get("http://localhost:3000/api/posts/");
+
+    const posts = response.data.data;
+
     res.render("home", {
       title: "Home",
       sheet: "css/home.css",
@@ -45,7 +48,9 @@ app.get("/projects", (req, res) => {
 });
 app.get("/blog", async (req, res) => {
   try {
-    const posts = await Post.find();
+    let response = await axios.get("http://localhost:3000/api/posts/");
+
+    const posts = response.data.data;
     res.render("blog", {
       title: "Blog",
       sheet: "css/blog.css",
@@ -55,7 +60,24 @@ app.get("/blog", async (req, res) => {
     console.error(error.message);
   }
 });
+app.get("/blog/posts/:post_id", async (req, res) => {
+  try {
+    const post_id = req.params.post_id;
+    let response = await axios.get(
+      `http://localhost:3000/api/posts/${post_id}`
+    );
 
+    const post = response.data.data;
+    console.log(post);
+    res.render("blog", {
+      title: "Blog",
+      sheet: "css/blog.css",
+      post: post,
+    });
+  } catch (error) {
+    console.error(error.message);
+  }
+});
 app.get("/gallery", (req, res) => {
   res.render("gallery", { title: "Gallery", sheet: "css/gallery.css" });
 });

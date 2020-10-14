@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 const config = require("config");
 const db = config.get("atlasURI");
+const dbTest = config.get("atlasURI");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(db, {
+    await mongoose.connect(dbTest, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
